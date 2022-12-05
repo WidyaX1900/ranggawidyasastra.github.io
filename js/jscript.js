@@ -51,7 +51,7 @@ for(let i = 0; i < portfolio.length; i++){
 
         portfolio[i].addEventListener('click', function(){
 
-            document.location.href = 'https://medium.com/@ranggawidyasastra/unofficial-website-for-warung-mina-662118d54d27';
+            window.open('https://medium.com/@ranggawidyasastra/unofficial-website-for-warung-mina-662118d54d27', '_blank').focus();
         });
     }
 }
