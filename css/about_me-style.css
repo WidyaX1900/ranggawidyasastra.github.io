@@ -1,0 +1,134 @@
+:root{
+    --style : 'Roboto', sans-serif;
+}
+
+/* Profile pic CSS */
+.myPic{
+    width: 80%;
+    opacity: 0;
+    animation: fadeIn 5s forwards;
+}
+
+.myPic img{
+    width: 100%;
+    margin-top: 40px;
+}
+
+/* Experience Section CSS */
+.experience{
+    width: 80%;
+    margin: 30px auto;
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+}
+
+.experience .experience-header h2{
+    text-align: center; 
+}
+
+.experience p{
+    font-family: var(--style);
+    margin-top: 15px;
+    line-height: 25px;
+    font-size: 1.2rem;
+}
+
+/* Education Section CSS */
+.education{
+    width: 80%;
+    margin: 80px auto;
+    text-align: center;
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+}
+
+.education .graduated{
+    font-family: var(--style);
+}
+
+.education .graduated h3{
+    margin-top: 20px;
+    font-size: 1.2rem;
+}
+
+.education .graduated h3:nth-child(3){
+    margin-top: 40px;
+}
+
+.education .graduated p{
+    font-size: 1.2rem;
+}
+
+/* Hobby and Interest */
+.hobby{
+    width: 80%;
+    margin: 30px auto;
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+}
+
+.hobby .hobby-header h2{
+    text-align: center;
+}
+
+.hobby p{
+    font-family: var(--style);
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+@keyframes fadeIn{
+    to{
+        opacity: 1;
+        transition: .5s;
+    }
+}
+
+/* Tablet Display */
+@media screen and (min-width: 768px){
+    /* h2 CSS */
+    h2{
+        font-size: 1.8rem;
+    }
+
+    /* p CSS */
+    .container p{
+        font-size: 1.2rem;
+    } 
+
+    /* Profile pic CSS */
+    .myPic{
+        width: 60%;
+        margin: 0 auto;
+    }
+
+}
+
+/* Dekstop Display */
+@media screen and (min-width: 1280px){
+    /* Profile pic CSS */
+    .myPic{
+        width: 40%;
+    }
+
+    /* h3 CSS */
+    h3{
+        font-size: 1.5rem;
+    }
+
+    /* p CSS */
+    .container p{
+        font-size: 1.4rem;
+    }
+
+    .hobby p{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .education .graduated p, .education .graduated h3{
+        font-size: 1.4rem;
+    }
+
+}
+
