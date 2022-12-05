@@ -126,6 +126,12 @@
         margin: 0 auto;
     }
 
+    /* education section CSS */
+    .education{
+        margin-top: 50px;
+        margin-bottom: 70px;
+    }
+
     .education .graduated p, .education .graduated h3{
         font-size: 1.4rem;
     }
