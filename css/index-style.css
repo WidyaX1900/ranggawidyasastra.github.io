@@ -255,17 +255,22 @@ nav .hamburger-icon span.rotate-3{
     border-radius: 4px;
 }
 
-.project .project-portfolio .portfolio.satu{
+.project .project-portfolio .portfolio.one{
     grid-area: portfolio1;
-    background-color: salmon;
+    background-color: rgb(251, 251, 251);
 }
 
-.project .project-portfolio .portfolio.dua{
+.project .project-portfolio .portfolio img{
+    width: 100%;
+    margin-top: 5%;
+}
+
+.project .project-portfolio .portfolio.two{
     grid-area: portfolio2;
     background-color: lightgreen;
 }
 
-.project .project-portfolio .portfolio.tiga{
+.project .project-portfolio .portfolio.three{
     grid-area: portfolio3;
     background-color: lightblue;
 }
@@ -420,9 +425,14 @@ footer{
         cursor: pointer;
     }
     
-    .project .project-portfolio .portfolio.satu{
+    .project .project-portfolio .portfolio.one{
         height: 610px;
     }
+    
+    .project .project-portfolio .portfolio h3{
+        font-size: 2rem;
+    }
+
 
     /* Collaborated Section CSS */
     .collaborated .icons figure{

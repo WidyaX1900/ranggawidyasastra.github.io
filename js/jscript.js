@@ -28,7 +28,7 @@ icon.addEventListener("click", function(){
 
 const collaborate = document.querySelector(".collaborated");
 const social = collaborate.lastElementChild;
-const ic = social.lastElementChild.querySelectorAll("figure");
+const ic = social.lastElementChild.querySelectorAll("span");
 
 // Social Media Icon Link
 ic.forEach(element => {
@@ -41,3 +41,17 @@ ic.forEach(element => {
         }
     });
 });
+
+const portfolio = document.getElementsByClassName("portfolio");
+
+// Portfolio link
+for(let i = 0; i < portfolio.length; i++){
+
+    if(i === 0){
+
+        portfolio[i].addEventListener('click', function(){
+
+            document.location.href = 'https://medium.com/@ranggawidyasastra/unofficial-website-for-warung-mina-662118d54d27';
+        });
+    }
+}
