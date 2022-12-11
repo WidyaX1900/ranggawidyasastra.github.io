@@ -1,10 +1,11 @@
 :root{
-    --style : 'Roboto', sans-serif;
+    --secondary-font : 'Roboto', sans-serif;
+    --container-width: 95%;
 }
 
 /* Profile pic CSS */
 .myPic{
-    width: 80%;
+    width: var(--container-width);
     opacity: 0;
     animation: fadeIn 5s forwards;
 }
@@ -12,11 +13,12 @@
 .myPic img{
     width: 100%;
     margin-top: 40px;
+    border-radius: 50%;
 }
 
 /* Experience Section CSS */
 .experience{
-    width: 80%;
+    width: var(--container-width);
     margin: 20px auto 0 auto;
     opacity: 0;
     animation: fadeIn 2s forwards;
@@ -27,7 +29,7 @@
 }
 
 .experience p{
-    font-family: var(--style);
+    font-family: var(--secondary-font);
     margin-top: 15px;
     line-height: 25px;
     font-size: 1.2rem;
@@ -35,7 +37,7 @@
 
 /* Education Section CSS */
 .education{
-    width: 80%;
+    width: var(--container-width);
     margin: 30px auto 0 auto;
     text-align: center;
     opacity: 0;
@@ -43,7 +45,7 @@
 }
 
 .education .graduated{
-    font-family: var(--style);
+    font-family: var(--secondary-font);
 }
 
 .education .graduated h3{
@@ -61,7 +63,7 @@
 
 /* Hobby and Interest */
 .hobby{
-    width: 80%;
+    width: var(--container-width);
     margin: 40px auto 20px auto;
     opacity: 0;
     animation: fadeIn 2s forwards;
@@ -72,8 +74,7 @@
 }
 
 .hobby p{
-    font-family: var(--style);
-    text-align: center;
+    font-family: var(--secondary-font);
     font-size: 1.2rem;
 }
 
