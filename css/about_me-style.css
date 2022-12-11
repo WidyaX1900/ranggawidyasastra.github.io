@@ -1,6 +1,7 @@
 :root{
     --secondary-font : 'Roboto', sans-serif;
     --container-width: 95%;
+    --header-align: left;
 }
 
 /* Profile pic CSS */
@@ -25,7 +26,7 @@
 }
 
 .experience .experience-header h2{
-    text-align: center; 
+    text-align: var(--header-align); 
 }
 
 .experience p{
@@ -39,9 +40,12 @@
 .education{
     width: var(--container-width);
     margin: 30px auto 0 auto;
-    text-align: center;
     opacity: 0;
     animation: fadeIn 2s forwards;
+}
+
+.education .edu-header h2{
+    text-align: var(--header-align);
 }
 
 .education .graduated{
@@ -70,7 +74,7 @@
 }
 
 .hobby .hobby-header h2{
-    text-align: center;
+    text-align: var(--header-align);
 }
 
 .hobby p{
@@ -94,7 +98,7 @@
 
     /* p CSS */
     .container p{
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     } 
 
     /* Profile pic CSS */
@@ -103,10 +107,34 @@
         margin: 0 auto;
     }
 
+    /* Education section CSS */
+    .education .graduated h3{
+        font-size: 1.7rem;
+    }
+    
+    .education .graduated h4{
+        font-size: 1.4rem;
+        margin: 10px 0 10px 0;
+    }
+    
+    .education .graduated p{
+        font-size: 1.6rem;
+    }
+
 }
 
 /* Dekstop Display */
 @media screen and (min-width: 1280px){
+    /* Container CSS */
+    .container{
+        width: 85%;
+    }
+
+    /* h2 CSS */
+    h2{
+        font-size: 2.5rem;
+    }
+
     /* Profile pic CSS */
     .myPic{
         width: 40%;
@@ -121,25 +149,24 @@
     .container p{
         font-size: 1.4rem;
     }
-
-    .hobby p{
-        width: 80%;
-        margin: 0 auto;
+  
+    /* experience section CSS */
+    .experience p{
+        font-size: 1.5rem;
+        line-height: 30px;
     }
-
+    
     /* education section CSS */
     .education{
-        margin-top: 50px;
-        margin-bottom: 70px;
+        margin: 50px auto 70px auto;
     }
 
-    .education .graduated p, .education .graduated h3{
-        font-size: 1.4rem;
-    }
-
-    /* experience section CSS */
-    .experience{
-        width: 80%;
+    .education .graduated h3{
+        font-size: 1.8rem;
+    }   
+    
+    .education .graduated h4{
+        font-size: 1.6rem;
     }
 
 }
