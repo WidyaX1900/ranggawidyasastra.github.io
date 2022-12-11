@@ -146,7 +146,6 @@ nav .hamburger-icon span.rotate-3{
     margin: 0 auto;
     top: 100px;
     right: 0;
-    border: 4px solid red;
 }
 
 /* Hero Section CSS */
@@ -264,7 +263,7 @@ nav .hamburger-icon span.rotate-3{
 
 .project .project-portfolio .portfolio.one{
     grid-area: portfolio1;
-    background-color: rgb(251, 251, 251);
+    background-color: lightgreen;
 }
 
 .project .project-portfolio .portfolio img{
@@ -346,20 +345,87 @@ footer{
 
 /* Tablet Display */
 @media screen and (min-width: 768px) {
+    /* Navigation menu CSS */
+    .menu ul li a{
+        font-size: 1.7rem;
+    }
+    
+    .menu ul li a:hover{
+        font-size: 2rem;
+    }
+
+    /* Container CSS*/
+    .container{
+        width: var(--container-width);
+    }
+
     /* Hero Section CSS */
+    .hero figure{
+        width: 70%;
+        margin: 15% auto 0 auto;
+    }
+
+    .hero .description h1{
+        font-size: 2.8rem;
+        color: var(--main);
+    }
+    
+    .hero .description h2{
+        font-weight: 500;
+        font-size: 2rem;
+    }
+
+    .hero .description p{
+        margin-top: 20px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.7rem;
+    }
+
     .hero .cta{
         width: 80%;
         flex-direction: row;
         align-items: center;
+        justify-content: flex-start;
+    }
+
+    .hero .cta button{
+        font-size: 25px;
+        width: 14em;
+        height: 3em;
+        border: none;
+        background-color: var(--main);
+        color: white;
+        font-family: 'Roboto', sans-serif;
+        border-radius: 4px;
+        box-shadow: 0 5px 25px #3274c054;
+        transition: .3s;
+        margin-bottom: 0;
+        margin-left: 0;
+    }
+    
+    .hero .cta a{
+        font-size: 1.5rem;
+    }
+
+    /* Project section CSS */
+    .project{
+        width: var(--container-width);
+        margin: 80px auto;
     }
 
     /* Collaborate Section CSS */
-    .collaborated .icons{
-        width: 30%;
+    .collaborated .persuade p{
+        font-size: 1.5rem;
     }
 
-    .collaborated .icons figure{
-        width: 15%;
+    .collaborated .icons{
+        width: 60%;
+        justify-content: space-evenly;
+        margin: 30px auto;
+    }
+
+    .collaborated .icons span{
+        width: 11%;
     }
 }
 
@@ -368,6 +434,10 @@ footer{
     /* Navbar CSS */
     nav .hamburger-icon{
         display: none;
+    }
+
+    nav .nav-header h3{
+        font-size: 2rem;
     }
 
     nav ul{
@@ -381,6 +451,7 @@ footer{
         text-decoration: none;
         color: var(--main);
         transition: .3s;
+        font-size: 1.2rem;
     }
     
     nav ul li a:hover{
@@ -388,6 +459,11 @@ footer{
         color: #285e9d;
         font-size: 1.5rem;
         font-weight: bold;
+    }
+
+    /* Container CSS */
+    .container{
+        width: var(--container-width);
     }
 
     /* Header CSS */
@@ -403,16 +479,30 @@ footer{
     }
 
     .hero figure{
-        width: 350px;
+        width: 400px;
         margin-top: 100px;
     }
 
+    .hero figure img{
+        border-radius: 0;
+    }
+
     .hero .description{
-        width: 500px;
+        width: 700px;
         margin-top: 150px;
     }
 
+    .hero .cta button{
+        font-size: 23px;
+        width: 12em;
+        height: 3em;
+    }
+
     /* Project Section CSS */
+    .project{
+        margin: 80px auto;
+    }
+
     .project .project-portfolio{
         grid-template-areas: 
             "portfolio1 portfolio2"
