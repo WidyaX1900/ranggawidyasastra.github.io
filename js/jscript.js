@@ -2,14 +2,14 @@ const icon = document.querySelector("nav .hamburger-icon");
 const hamburger = icon.querySelectorAll("span");
 const menus = document.querySelectorAll(".menu ul li a");
 const link = document.getElementsByClassName("menu");
-const h2 = document.querySelector("nav .nav-header h2");
+const h3 = document.getElementsByClassName("nav-heading");
 const nav = document.getElementsByTagName("nav");
 
 // Menu Slide
 function slideMenu(){
     link[0].classList.toggle("slide");
     link[0].classList.toggle("dark");
-    h2.classList.toggle("light");
+    h3[0].classList.toggle("light");
     nav[0].classList.toggle("dark");
 
     hamburger.forEach(element => {
@@ -17,6 +17,7 @@ function slideMenu(){
     })
 
 }
+
 
 // Hamburger Icon Animation
 icon.addEventListener("click", function(){

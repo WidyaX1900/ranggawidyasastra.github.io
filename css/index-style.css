@@ -8,6 +8,7 @@
 :root{
     --main : #3274C0;
     --header : 2rem;
+    --container-width: 95%;
 }
 
 body{
@@ -30,11 +31,11 @@ nav ul{
     display: none;
 }
 
-nav .nav-header h2{
+nav .nav-header h3{
     color: var(--main);
 }
 
-nav .nav-header h2.light{
+nav .nav-header h3.light{
     color: white;
 }
 
@@ -145,23 +146,26 @@ nav .hamburger-icon span.rotate-3{
     margin: 0 auto;
     top: 100px;
     right: 0;
+    border: 4px solid red;
 }
 
 /* Hero Section CSS */
 .hero{
-    width: 80%;
+    width: var(--container-width);
     margin: 0 auto;
     display: flex;
     flex-direction: column;
 }
 
 .hero figure{
-    width: 80%;
-    margin: 20% auto 0 auto;
+    width: 90%;
+    margin: 25% auto 0 auto;
 }
 
 .hero img{
     width: 100%;
+    border-radius: 50%;
+    border: 4px solid white;
 }
 
 .hero .description{
@@ -194,16 +198,17 @@ nav .hamburger-icon span.rotate-3{
 
 .hero .cta button{
     font-size: 18px;
-    width: 12em;
+    width: 100%;
     height: 3em;
     border: none;
     background-color: var(--main);
     color: white;
     font-family: 'Roboto', sans-serif;
     border-radius: 4px;
-    box-shadow: 0 10px 25px #3274c054;
+    box-shadow: 0 5px 25px #3274c054;
     transition: .3s;
     margin-bottom: 15px;
+    margin-left: 10%;
 }
 
 .hero .cta button:hover{
@@ -215,6 +220,8 @@ nav .hamburger-icon span.rotate-3{
     color: var(--main);
     font-weight: 500;
     transition: .3s;
+    font-size: 1.2rem;
+    margin-left: 14px;
 }
 
 .hero .cta a:hover{
@@ -225,7 +232,7 @@ nav .hamburger-icon span.rotate-3{
 
 /* Project Section CSS */
 .project{
-    width: 80%;
+    width: var(--container-width);
     margin: 50px auto;
 }
 
@@ -277,7 +284,7 @@ nav .hamburger-icon span.rotate-3{
 
 /* Collaborate Section */
 .collaborated{
-    width: 80%;
+    width: var(--container-width);
     margin: 30px auto;
 }
 
@@ -301,14 +308,14 @@ nav .hamburger-icon span.rotate-3{
 }
 
 .collaborated .icons{
-    width: 50%;
+    width: 70%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: 20px auto;
 }
 
 .collaborated .icons span{
-    width: 20%;
+    width: 15%;
     opacity: 40%;
     cursor: pointer;
 }
@@ -318,7 +325,6 @@ footer{
     width: 100%;
     height: 70px;
     background-color: #1D3E65;
-    font-family: "Roboto", sans-serif;
     color: white;
     font-size: 1.2rem;
     display: flex;
