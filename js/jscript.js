@@ -1,3 +1,4 @@
+// Hamburger menu variables
 const icon = document.querySelector("nav .hamburger-icon");
 const hamburger = icon.querySelectorAll("span");
 const menus = document.querySelectorAll(".menu ul li a");
@@ -27,7 +28,8 @@ icon.addEventListener("click", function(){
     slideMenu();
 });
 
-const collaborate = document.querySelector(".collaborated");
+// Social variables
+const collaborate = document.getElementsByClassName("collaborated")[0];
 const social = collaborate.lastElementChild;
 const ic = social.lastElementChild.querySelectorAll("span");
 
@@ -56,3 +58,10 @@ for(let i = 0; i < portfolio.length; i++){
         });
     }
 }
+
+// CTA variables
+const cta = document.getElementsByClassName("cta")[0];
+const ctaButton = cta.getElementsByTagName("button")[0];
+ctaButton.addEventListener("click", function(){
+    document.location.href = "portfolio.html";
+});

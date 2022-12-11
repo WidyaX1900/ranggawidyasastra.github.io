@@ -208,6 +208,7 @@ nav .hamburger-icon span.rotate-3{
     transition: .3s;
     margin-bottom: 15px;
     margin-left: 10%;
+    cursor: pointer;
 }
 
 .hero .cta button:hover{
@@ -392,14 +393,6 @@ footer{
         font-size: 25px;
         width: 14em;
         height: 3em;
-        border: none;
-        background-color: var(--main);
-        color: white;
-        font-family: 'Roboto', sans-serif;
-        border-radius: 4px;
-        box-shadow: 0 5px 25px #3274c054;
-        transition: .3s;
-        margin-bottom: 0;
         margin-left: 0;
     }
     
